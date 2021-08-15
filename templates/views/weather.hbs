@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/styles.css">    
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h3>Use this site to get your weather!</h3>
+        <form id="form-weather">
+            <input placeholder="How's the weather" name="cityName">
+            <button>Search</button>
+            <p id="location"><span class="fas fa-map-marker-alt"></span></p>                       
+            <p id="weather"></p>
+        </form>
+    </div>
+
+    {{>footer}}    
+    <script src="/js/weather.js"></script>
+</body>
+</html>
